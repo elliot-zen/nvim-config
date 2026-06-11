@@ -12,7 +12,16 @@ return {
       require "configs.lspconfig"
     end,
   },
-
+  {
+    'stevearc/aerial.nvim',
+    cmd =  { "AerialOpen", "AerialToggle" },
+    opts = {},
+    -- Optional dependencies
+    -- dependencies = {
+    --    "nvim-treesitter/nvim-treesitter",
+    --    "nvim-tree/nvim-web-devicons"
+    -- },
+  }
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 
