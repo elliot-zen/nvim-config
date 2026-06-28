@@ -1,5 +1,15 @@
 require("nvchad.configs.lspconfig").defaults()
 
+vim.lsp.config('rust_analyzer', {
+  settings = {
+    ["rust-analyzer"] = {
+        checkOnSave = true,
+        check = {
+          command = "clippy",
+        },
+      }
+    }
+})
 local servers = { "html", "cssls" }
 vim.lsp.enable(servers)
 vim.lsp.enable('gopls')
