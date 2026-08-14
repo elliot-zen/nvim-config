@@ -7,7 +7,17 @@ local map = vim.keymap.set
 -- map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 map("n", "<leader>fl", function()
-  require("telescope.builtin").lsp_document_symbols()
+  require("telescope.builtin").lsp_document_symbols({
+    symbols = {
+      "Class",
+      "Interface",
+      "Struct",
+      "Enum",
+      "Constructor",
+      "Method",
+      "Function",
+    },
+  })
 end, { desc = "LSP Document Symbols" })
 map("n", "<leader>cc", "<cmd>ccl<cr>")
 map("n", "<leader>al", "<cmd>AerialToggle<cr>")
