@@ -36,4 +36,16 @@ end, {
   desc = "Copy selected range",
 })
 
+-- Diffview
+map("n", "<leader>gd", "<cmd>DiffviewOpen<cr>", {
+  desc = "Git Diff",
+})
+
+map("n", "<leader>gh", "<cmd>DiffviewFileHistory %<cr>", {
+  desc = "Git File History",
+})
+
+map("n", "<leader>gq", "<cmd>DiffviewClose<cr>", {
+  desc = "Close Git Diff",
+})
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")

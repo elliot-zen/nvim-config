@@ -14,14 +14,21 @@ return {
   },
   {
     'stevearc/aerial.nvim',
-    cmd =  { "AerialOpen", "AerialToggle" },
+    cmd = { "AerialOpen", "AerialToggle" },
     opts = {},
     -- Optional dependencies
     -- dependencies = {
     --    "nvim-treesitter/nvim-treesitter",
     --    "nvim-tree/nvim-web-devicons"
     -- },
-  }
+  },
+  {
+    "sindrets/diffview.nvim",
+    cmd = { "DiffviewOpen", "DiffviewClose", "DiffviewFileHistory" },
+    opts = {
+      enhanced_diff_hl = true,
+    },
+  },
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 
